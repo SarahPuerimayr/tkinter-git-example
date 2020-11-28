@@ -215,9 +215,25 @@ window.mainloop()
 ## Tkinter Canvas
 
 ### Source code example
+```python
+import tkinter as tk
+
+window = tk.Tk()
+window.title("Canvas Example")
+window.geometry("350x270")
+
+
+C = tk.Canvas(window, bg="blue", height=250, width=270)
+coord = 10, 10, 250, 240
+arc = C.create_arc(coord, start=30, extent=300, fill="yellow")
+
+C.pack()
+
+window.mainloop()
+```
 
 ### Screenshot
-
+![Tkinter Canvas Example](tkinter_canvas.png "Tkinter Canvas Example")
 
 ## Tkinter Listbox and Scrollbar
 
